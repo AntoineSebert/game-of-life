@@ -29,9 +29,20 @@ fn check_args() {
     } 
 }
 
+/*
+ * Display the world in the console.
+ */
 fn display_world(&world: &[[bool; 20]; 20]) {
     for &element in world.iter() {
-        println!("row");
+        for &element_2 in element.iter() {
+            if element_2 {
+                print!("⚪ ");
+            }
+            else {
+                print!("⚫ ");
+            }
+        }
+        println!();
     }
 }
 

@@ -5,18 +5,18 @@
 
 ## Table of contents
 
-- :fallen_leaf: [Motivation](#motivation)
-- 💐 [Technical choices]
-- :hibiscus: [Prerequisites]
-- :ear_of_rice: [Getting started]
-- :sunflower: [Running the tests]
-- :maple_leaf: [Built tool]
-- 🌲 [Documentation]
-- 🌹 [File hierarchy]
-- :seedling: [Contributing](#contributing)
-- :cactus: [Versioning](#versioning)
-- :leaves: [Authors](#authors)
-- :four_leaf_clover: [License](#license)
+- [Motivation](#motivation)
+- [Technical choices]
+- [Prerequisites]
+- [Getting started]
+- [Running the tests]
+- [Built tool]
+- [Documentation]
+- [File hierarchy]
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [License](#license)
 
 ## Motivation
 

@@ -7,12 +7,9 @@
 
 - :fallen_leaf: [Motivation](#motivation)
 - 💐 [Technical choices]
+- :hibiscus: [Prerequisites]
 - :ear_of_rice: [Getting started]
-  - :hibiscus: [Prerequisites]
-  - :cherry_blossom: [Installing]
 - :sunflower: [Running the tests]
-  - :tulip: [End to end tests]
-  - :blossom: [Coding style tests]
 - :maple_leaf: [Built tool]
 - 🌲 [Documentation]
 - 🌹 [File hierarchy]
@@ -32,62 +29,26 @@ This project is an entry to the [Local Hack Day 2018](https://localhackday.mlh.i
 * Rust
 * CLI (no GUI)
 
+## Prerequisites
+
+**Rust**: Available at https://www.rust-lang.org. Follow the instructions to install the Rust compiler and the **Cargo** package manager.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ```
-git clone 
-make ... ?
-run dandelion
+git clone https://github.com/AntoineSebert/local_hack_day_2018.git
+cargo build
+cargo run
 ```
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-rustc
-cargo
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## Running the tests
 
 Explain how to run the automated tests for this system.
 
-### End to end tests
-
-Explain what these tests test and why.
-
 ```
 cargo test
-```
-
-### Coding style tests
-
-Explain what these tests test and why.
-
-```
-Give an example
 ```
 
 ## Built tool
@@ -100,20 +61,25 @@ Give an example
 
 ## File hierarchy
 
---{root}				- ... directory.
-  +--readme.txt                 - This file.
-  +--documentation.html         - Shortcut to the web documentation page.
-  +--license.txt                - GPL license text.
-  +--demos/                     - Demo projects, one directory per platform.
-  +--docs/                      - Documentation.
-  |  +--common/                 - Documentation common build resources.
-  |  +--hal/                    - Builders for HAL.
-  |  +--nil/                    - Builders for NIL.
-  |  +--rt/                     - Builders for RT.
-  +--ext/                       - External libraries, not part of ChibiOS/RT.
-  +--os/                        - ChibiOS components.
-  |  +--common/                 - Shared OS modules.
-  |  |  +--abstractions/        - API emulator wrappers.
+--{root}									- root directory
+​	+--.gitignore							- ignored files and repositories
+​	+--.travis.yml							- CI service configuration
+​	+--Cargo.lock							- internal build service configuration for project
+​	+--Cargo.toml							- custom build service configuration for project
+​	+--changelog.md						- versioning file
+​	+--CODE_OF_CONDUCT.md				- code of conduct for the project
+​	+--CODEOWNERS.md					- developer responsibles for parts of the project
+​	+--CONTRIBUTING.md					- contribution guidelines
+​	+--LICENSE.md						- CC BY-NC-SA 4.0 text
+​	+--PULL_REQUEST_TEMPLATE.md		- pull request template
+​	+--README.md						- this file
+​	+--.git/								- git configuration and files
+​	+--.github/							- Github specific files
+​	+--docs/								- Documentation
+​	+--resources/							- various resources
+​	+--src/								- source files
+​	+--target/								- build files
+​	+--tests/								- tests files
 
 ## Contributing
 

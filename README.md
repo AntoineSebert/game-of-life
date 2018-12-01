@@ -61,25 +61,27 @@ cargo test
 
 ## File hierarchy
 
---{root}									- root directory
-​	+--.gitignore							- ignored files and repositories
-​	+--.travis.yml							- CI service configuration
-​	+--Cargo.lock							- internal build service configuration for project
-​	+--Cargo.toml							- custom build service configuration for project
-​	+--changelog.md						- versioning file
-​	+--CODE_OF_CONDUCT.md				- code of conduct for the project
-​	+--CODEOWNERS.md					- developer responsibles for parts of the project
-​	+--CONTRIBUTING.md					- contribution guidelines
-​	+--LICENSE.md						- CC BY-NC-SA 4.0 text
-​	+--PULL_REQUEST_TEMPLATE.md		- pull request template
-​	+--README.md						- this file
-​	+--.git/								- git configuration and files
-​	+--.github/							- Github specific files
-​	+--docs/								- Documentation
-​	+--resources/							- various resources
-​	+--src/								- source files
-​	+--target/								- build files
-​	+--tests/								- tests files
+```
+--{root}							- root directory
+	+--.gitignore					- ignored files and repositories
+	+--.travis.yml					- CI service configuration
+	+--Cargo.lock					- internal build service configuration for project
+	+--Cargo.toml					- custom build service configuration for project
+	+--changelog.md					- versioning file
+	+--CODE_OF_CONDUCT.md			- code of conduct for the project
+	+--CODEOWNERS.md				- developer responsibles for parts of the project
+	+--CONTRIBUTING.md				- contribution guidelines
+	+--LICENSE.md					- CC BY-NC-SA 4.0 text
+	+--PULL_REQUEST_TEMPLATE.md		- pull request template
+	+--README.md					- this file
+	+--.git/						- git configuration and files
+	+--.github/						- Github specific files
+	+--docs/						- Documentation
+	+--resources/					- various resources
+	+--src/							- source files
+	+--target/						- build files
+	+--tests/						- tests files
+```
 
 ## Contributing
 

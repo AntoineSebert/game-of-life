@@ -13,7 +13,7 @@
 
 [dependencies]
 	log = "0.4.6"
-	thread_local = "0.3.6"
+	thread_local = "1.1.4"
 	num_cpus = "1.8.0"
 	unreachable = "1.0.0"
 	toml = "0.4.9"

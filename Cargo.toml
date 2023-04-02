@@ -1,19 +1,15 @@
 [package]
-	name = "local_hack_day_2018"
-	version = "0.1.0"
-	authors = ["Antoine <antoine.sb@orange.fr>"]
-	description = "This project is an entry to the Local Hack Day 2018. It aims to implement Conway's Game of Life inside Conway's Game of Life while giving zero fucks, or even a negative amount of fucks."
-	license-file = "LICENSE.md"
-	readme = "README.md"
-	keywords = ["conway", "game of life", "CLI", "simulation", "cellular automaton"]
-	categories = ["games", "science", "simulation"]
-	documentation = "https://github.com/AntoineSebert/local_hack_day_2018/docs"
-	homepage = "https://github.com/AntoineSebert/local_hack_day_2018"
-	repository = "https://github.com/AntoineSebert/local_hack_day_2018"
+name = "game-of-life"
+version = "1.0.0"
+edition = "2021"
+authors = ["Antoine <antoine.sb@orange.fr>"]
+description = "This project is an entry to the Local Hack Day 2018."
+license-file = "LICENSE.md"
+readme = "README.md"
+keywords = ["conway", "game of life", "CLI", "simulation", "cellular automaton"]
+categories = ["games", "science", "simulation"]
 
 [dependencies]
-	log = "0.4.6"
-	thread_local = "1.1.4"
-	num_cpus = "1.8.0"
-	unreachable = "1.0.0"
-	toml = "0.4.9"
+log = "0.4.6"
+clap = {version = "^4.2", features = ["derive"] }
+rand = "^0.8"

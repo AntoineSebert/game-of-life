@@ -31,7 +31,7 @@ struct Args {
 fn print(board: &Vec<Vec<bool>>) {
     for line in board {
         for cell in line {
-            print!("{}", if *cell { '⚪' } else { '⚫' });
+            print!("{} ", if *cell { '⚪' } else { '⚫' });
         }
 
         println!();

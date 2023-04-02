@@ -119,7 +119,7 @@ fn next(board: &mut Vec<Vec<bool>>) {
 
     for y in 0..board.len() {
         for x in 0..board[y].len() {
-            alive_neighbors[y][x] = count_neighbours(&board, x, y);
+            alive_neighbors[y][x] = count_neighbours(board, x, y);
         }
     }
 
@@ -131,7 +131,7 @@ fn next(board: &mut Vec<Vec<bool>>) {
 }
 
 /// Assigns a cell to `ALIVE` with probability 0.5.
-fn populate_rand(board: &mut Vec<Vec<bool>>) {
+fn populate_rand(board: &mut [Vec<bool>]) {
     info!("No initial cells given; random populating...");
 
     for line in board.iter_mut() {
@@ -141,7 +141,7 @@ fn populate_rand(board: &mut Vec<Vec<bool>>) {
     }
 }
 
-fn populate_cli(board: &mut Vec<Vec<bool>>, coordinates: String, x: usize, y: usize) {
+fn populate_cli(board: &mut [Vec<bool>], coordinates: &str, x: usize, y: usize) {
     let coords: Vec<(usize, usize)> = coordinates
         .split(',')
         .map(|s| s.split_once(':').unwrap())
@@ -171,7 +171,7 @@ fn main() {
     if args.coordinates.is_empty() {
         populate_rand(&mut board);
     } else {
-        populate_cli(&mut board, args.coordinates, args.x, args.y);
+        populate_cli(&mut board, &args.coordinates, args.x, args.y);
     }
 
     let interval = Duration::from_millis(300);
@@ -183,7 +183,7 @@ fn main() {
         print(&board);
         next(&mut board);
 
-        let elapsed = Instant::now() - now;
+        let elapsed = now.elapsed();
         thread::sleep(if elapsed < interval {
             interval - elapsed
         } else {

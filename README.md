@@ -2,16 +2,24 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```
-git clone https://github.com/AntoineSebert/local_hack_day_2018.git
+```sh
+git clone https://github.com/AntoineSebert/game-of-life.git && cd game-of-life
 cargo build
-cargo run
+cargo run -- -x 6 -y 6 --generations 10 --coordinates 1:1,2:2,1:2,2:1,3:3,3:4,4:3,4:4
 ```
+
+The help is accessible using
 
 # Running the tests
 
-Explain how to run the automated tests for this system.
+You can run the tests using:
 
-```
+```sh
 cargo test
 ```
+
+# Examples
+
+With random population:
+
+![](render1680549023156.gif)

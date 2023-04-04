@@ -23,3 +23,29 @@ cargo test
 With random population:
 
 ![](render1680549023156.gif)
+
+With specified population:
+
+```sh
+cargo run -- -x 4 -y 4 --generations 2 --coordinates 1:1,2:2,1:2,2:1
+```
+
+```
+⚫⚫⚫⚫
+⚫⚪⚪⚫
+⚫⚪⚪⚫
+⚫⚫⚫⚫
+```
+
+```sh
+cargo run -- -x 6 -y 6 --generations 10 --coordinates 1:1,2:2,1:2,2:1,3:3,3:4,4:3,4:4
+```
+
+```
+⚫⚫⚫⚫⚫⚫
+⚫⚪⚪⚫⚫⚫
+⚫⚪⚪⚫⚫⚫
+⚫⚫⚫⚪⚪⚫
+⚫⚫⚫⚪⚪⚫
+⚫⚫⚫⚫⚫⚫
+```
